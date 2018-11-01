@@ -1,0 +1,14 @@
+Bryan Heiser
+***
+I was having issues with Jing and could not get the audio to go through, I am not sure why. I know we need aduio for the final presentation, so I will figure this out before that time comes. But for now this is the best I have.
+***
+
+I used the Django framework for this project. 
+
+What I have done:
+I start off by showing my 'views.py' file which contains the code for my UI so far. I have created four pages: a Home page, a Log In page, a Sign Up page, and a Cart page. The code for them is all there in 'views.py'. Next I showed 'urls.py' which shows the path of each url to get to the correct page. On the bottom terminal tab you can see my server running and the feedback I am receiving. It restarts each time a modificatin is made to one of my files. 
+
+I then move to my website's home page. It has the title of the company (since I am doing a Winter Sports Equipment Store), a welcoming message, and three navigation buttons. Each button goes to one of the three remaining pages I have created. I first went to Sign Up where I can enter my email and then password (twice) and sign up. Then I went to the Log In page where I could do the same thing, but sign in. Lastly, I visited the Cart page, which displayed Your Cart and a label for the items that will be in there.
+
+What I still have to do:
+I still have to fully implement these pages as well as the funcitonality of them (i.e. sign in, sign up, view items in cart, view items on home page). I also still need to connect the website to a database to ensure its functionality. So, some more UI and the backend needs to be done later on.
