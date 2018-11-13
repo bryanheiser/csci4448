@@ -4,13 +4,17 @@ from django.http import HttpResponse
 # Create your views here.
 def Home(request):
 	response = HttpResponse()
-	html_out = '<div style="width: 100vw; height: 100px; background:MidnightBlue"><header style="padding: 20px; text-align: center; font-size: 40px;' 
-	html_out += 'color: white; font-family: "Helvetica", sans-serif;">Capita</header><h3 style="position: absolute; top: 15px; right: 150px"><a style="color:white; text-decoration:none" href="login/">Log In</a></h3>'	
-	html_out += '<h3 style="position: absolute; top: 15px; right: 50px"><a style="color:white; text-decoration:none" href="cart/">Your Cart</a></h3>'
-	html_out += '<h3 style="position: absolute; top: 15px; right: 230px"><a style="color:white; text-decoration:none" href="signup/">Sign Up</a></h3></div>'
-	html_out += '<body style="background: LightBlue; margin: 0;">'
-	html_out += '<h1 style="padding: 20px; text-align: center; font-family: "Helvetica", sans-serif;">'
-	html_out += 'Check Out Our Newest Winter Gear!</h1>'
+	html_out = ""
+	f = open("home_html.txt")
+	for line in f:
+		html_out += line
+	#html_out = '<div style="width: 100vw; height: 100px; background:MidnightBlue"><header style="padding: 20px; text-align: center; font-size: 40px;' 
+	#html_out += 'color: white; font-family: "Helvetica", sans-serif;">Capita</header><h3 style="position: absolute; top: 15px; right: 150px"><a style="color:white; text-decoration:none" href="login/">Log In</a></h3>'	
+	#html_out += '<h3 style="position: absolute; top: 15px; right: 50px"><a style="color:white; text-decoration:none" href="cart/">Your Cart</a></h3>'
+	#html_out += '<h3 style="position: absolute; top: 15px; right: 230px"><a style="color:white; text-decoration:none" href="signup/">Sign Up</a></h3></div>'
+	#html_out += '<body style="background: LightBlue; margin: 0;">'
+	#html_out += '<h1 style="padding: 20px; text-align: center; font-family: "Helvetica", sans-serif;">'
+	#html_out += 'Check Out Our Newest Winter Gear!</h1>'
 	response.write(html_out)
 	return response	
 
