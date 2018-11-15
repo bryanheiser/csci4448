@@ -1,0 +1,97 @@
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+</head>
+<style>
+.navBar {
+        width: 100vw;
+        height: 100px;
+        background: Black;
+        <!-- background-image: url("static/mountains.jpeg");
+        background-repeat:no-repeat;
+        background-size:100%; -->
+}
+
+.body {
+        background: #444444;
+        margin: 0;
+}
+
+.text {
+        text-align: center;
+        font-family: 'Rakkas', cursive;
+        font-size: 25px;
+        color: #151515;
+}
+
+.input {
+        text-align: center;
+        width: 300px;
+        height: 40px;
+        border: 0px;
+        border-radius: 15px;
+        background-color: Black;
+        font-family: 'Rakkas', cursive;
+        font-size: 17px;
+        color: #9B1B00;
+}
+
+.signupButton {
+        text-align: center;
+        height: 30px;
+        width: 150px;
+        background-color: #9B1B00;
+        border: 0px;
+        border-radius: 25px;
+        font-size: 17px;
+        font-family: 'Rakkas', cursive;
+        color: #CACACA;
+}
+
+.title {
+        padding: 20px;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        font-family: 'Rakkas', cursive;
+}
+
+.link {
+        color: white;
+        text-decoration: none;
+        font-family: 'Rakkas', cursive;
+}
+</style>
+<div class="navBar">
+	<header class="title">CAPITA</header>
+	<h3 style="position: absolute; top: 15px; left: 40px">
+		<a class="link" href="../">
+			Home
+		</a>
+	</h3>
+</div>
+<body class="body">
+	<h1 style="padding: 10px; text-align: center; font-family: 'Rakkas', cursive;">
+		Sign Up
+	</h1>
+	<form style="text-align: center;">
+		<h3 class="text">
+			EMAIL
+		</h3>
+		<input type="text" name="email" class="input">
+		<h3 class="text">
+			PASSWORD
+		</h3>
+		<input type="password" name="password" class="input">
+		<h3 class="text">
+			RE-ENTER PASSWORD
+		</h3>
+		<input type="password" name="password1" class="input">
+	</form>
+	<div style="text-align: center">
+		<button type="button" class="signupButton">
+			Sign Up
+		</button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+</head>
+<style>
+.navBar {
+	width: 100vw;
+	height: 100px;
+	background: Black;
+	<!-- background-image: url("static/mountains.jpeg");
+	background-repeat:no-repeat;
+	background-size:100%; -->
+}
+
+.body {
+	background: #444444;
+	margin: 0;
+}
+
+.title {
+	padding: 20px; 
+	text-align: center; 
+	font-size: 40px; 
+	color: white; 
+	font-family: 'Rakkas', cursive;
+}
+
+.link {
+	color:white;
+	text-decoration: none;
+	font-family: 'Rakkas', cursive;"
+}
+</style>
+<div class="navBar">
+	<header class="title">CAPITA</header>
+	<h3 style="position: absolute; top: 15px; left: 40px">
+		<a class="link" href="../">
+			Home
+		</a>
+	</h3>
+</div>
+<body class="body">
+	<h1 style="padding: 10px; text-align: left; font-family: "Helvetica", sans-serif;">
+		Your Cart
+	</h1>
+	<p style="padding: 10px; font-size: 30px">
+		Items
+	</p>
+</body>
+</html>
