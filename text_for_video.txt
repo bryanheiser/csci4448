@@ -1,13 +1,4 @@
 Bryan Heiser
-***
-I was having issues with Jing and could not get the audio to go through even with an external mic it did not work, I am not sure why. I know we need aduio for the final presentation, so I will figure this out before that time comes. Right now this is all I have.
-***
 
 I used the Django framework for this project. 
 
-What I have done:
-I first look over the text fiels I created that contain my html for my website for ease of coding. I have editted the pages layout and a bit of its functionality including funcitonal home button on all pages, and a search bar and categories on the Home page. I then moved to look at what classes I have created. I created the classes Customer, Payment, and Item all of which may have a few minor tweaks in the future. I have also set up my database using SQlite.
-
-
-What I still have to do:
-I still have to connect the frontend to backend which will wake some time. I need to make a few more classes: Account, Store, and Admin. I also need to add more functionality to the website.
