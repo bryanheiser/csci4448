@@ -1,5 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from mywebsite.item import Item
+from mywebsite.cart import Cart
+import sqlite3
+import json
 
 # Create your views here.
 def Home(request):
@@ -20,47 +24,105 @@ def LogIn(request):
 	response.write(html_out)
 	return response
 
-def Cart(response):	
+def CartPage(request):	
 	response = HttpResponse()
 	html_out = ""
 	f = open("cart_html.txt")
 	for line in f:
 		html_out += line
-	
-	#html_out = '<div style="width: 100vw; height: 100px; background:MidnightBlue">'		
-	#html_out += '<header style="padding: 20px; text-align: center; font-size: 40px;' 
-	#html_out += 'color: white; font-family: "Helvetica", sans-serif;">Capita</header>'
-	#html_out += '<h3 style="position: absolute; top: 15px; left: 40px"><a style="color:white; text-decoration:none" href="">Home</a></h3></div>'
-	#html_out += '<body style="background: LightBlue; margin: 0;">'
-	#html_out += '<h1 style="padding: 10px; text-align: left; font-family: "Helvetica", sans-serif;">'
-	#html_out += 'Your Cart</h1>'
-	#html_out += '<p style="padding: 10px; font-size: 30px">Items</p></body>'
 	response.write(html_out)
 	return response
 
-def SignUp(response):
+def SignUp(request):
 	response = HttpResponse()	
 	html_out = ""
 	f = open("signup_html.txt")
 	for line in f:
 		html_out += line
-	
-	#html_out = '<div style="width: 100vw; height: 100px; background:MidnightBlue">'		
-	#html_out += '<header style="padding: 20px; text-align: center; font-size: 40px;' 
-	#html_out += 'color: white; font-family: "Helvetica", sans-serif;">Capita</header>'
-	#html_out += '<h3 style="position: absolute; top: 15px; left: 40px"><a style="color:white; text-decoration:none" href="">Home</a></h3></div>'
-	#html_out += '<body style="background: LightBlue; margin: 0;">'
-	#html_out += '<h1 style="padding: 10px; text-align: center; font-family: "Helvetica", sans-serif;">'
-	#html_out += 'Sign Up</h1>'
-	#html_out += '<form style="text-align: center;"><h3 style="text-align: center; font-family: "Helvetica", sans-serif;">'
-	#html_out += 'Email:</h3>'
-	#html_out += '<input type="text" name="email">'
-	#html_out += '<h3 style="text-align: center; font-family: "Helvetica", sans-serif;">'
-	#html_out += 'Password:</h3>'
-	#html_out += '<input type="text" name="password">'
-	#html_out += '<h3 style="text-align: center; font-family: "Helvetica", sans-serif;">'
-	#html_out += 'Re-Enter Password:</h3>'
-	#html_out += '<input type="text" name="password1"></form>'
-	#html_out += '<div style="text-align: center"><button type="button">Sign Up</button></div>'
 	response.write(html_out)
 	return response
+	
+def BatBoard(request):
+	response = HttpResponse()	
+	html_out = ""
+	f = open("bat_board_html.txt")
+	for line in f:
+		html_out += line
+	response.write(html_out)
+	return response
+
+def VolJacket(request):
+	response = HttpResponse()	
+	html_out = ""
+	f = open("vol_jacket_html.txt")
+	for line in f:
+		html_out += line
+	response.write(html_out)
+	return response
+
+def BurtMittens(request):
+	response = HttpResponse()	
+	html_out = ""
+	f = open("burt_mittens_html.txt")
+	for line in f:
+		html_out += line
+	response.write(html_out)
+	return response
+
+def LineSkis(request):
+	response = HttpResponse()	
+	html_out = ""
+	f = open("line_skis_html.txt")
+	for line in f:
+		html_out += line
+	response.write(html_out)
+	return response
+
+def VonGoggles(request):
+	response = HttpResponse()	
+	html_out = ""
+	f = open("von_goggles_html.txt")
+	for line in f:
+		html_out += line
+	response.write(html_out)
+	return response
+
+def _686Jacket(request):
+	response = HttpResponse()	
+	html_out = ""
+	f = open("686_jacket_html.txt")
+	for line in f:
+		html_out += line
+	response.write(html_out)
+	return response
+
+def add_to_cart(request):
+	conn = sqlite3.connect('db.sqlite3')
+	c = conn.cursor()
+	if request.method == 'GET':
+		data = request.body.decode('utf-8')
+		#c.execute("insert into cart (itemName, quantity) values (\"Burton Mittens\", 2)")
+		conn.commit()
+	c.close()
+	conn.close()
+	
+	cart = Cart()
+	cc = open("current_cart.txt")
+	for line in cc:
+		cart.add(line[:-1])	
+	response = HttpResponse()
+	html_out = ""
+	f = open("cart_html.txt")
+	for line in f:
+		if line != "</body>\n" and line != "</html>":
+			html_out += line
+	for item_ in cart.items:
+		html_out += "\t<div class=\"cartItems\">\n\t\t<p style=\"position:absolute; left:50px;\">1 "
+		html_out += item_
+		html_out += "</p>\n\t\t<p style=\"text-align:center \">remove</p>"
+	html_out += "</body>\n</html>"
+	response.write(html_out)	
+	return response
+
+
+

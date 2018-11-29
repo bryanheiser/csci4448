@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+</head>
+<style>
+.navBar {
+	width: 100vw;
+	height: 100px;
+	background: Black;
+}
+
+.body {
+	background: #444444;
+	margin: 0;
+}
+
+.title {
+	padding: 20px; 
+	text-align: center; 
+	font-size: 40px; 
+	color: white; 
+	font-family: 'Rakkas', cursive;
+}
+
+.link {
+	color:white;
+	text-decoration: none;
+	font-family: 'Rakkas', cursive;
+}
+
+.Img {
+	position: absolute;
+	left: 10%;
+}
+
+.info {
+	position: absolute;
+	right: 15%;
+}
+
+.itemName {
+	position: absolute;
+	top: 20%;
+	right: 100px;;
+	color: white;
+	font-family: 'Rakkas', cursive;
+	font-size: 60px;
+}
+
+.qText {
+	position: absolute;
+	top: 800%;
+	right: 160px;
+	font-family: 'Rakkas', cursive;
+	font-size: 25px;
+	color: #151515;
+}
+
+.qInput {
+	position: absolute;
+	top: 1000%;
+	right: 150px;
+	width: 100px;
+	height: 40px;
+	border: 0px;
+	border-radius: 8px;
+	background-color: White;
+	font-family: 'Rakkas', cursive;
+	font-size: 23px;
+	color: #444444;
+	text-align: center;
+}
+
+.addToCartButton {
+	position: absolute;
+	top: 1200%;
+	right: 100px;
+	height: 50px;
+	width: 200px;
+	background-color: #9B1B00;
+	border: 0px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: 'Rakkas', cursive;
+	color: #CACACA;
+}
+
+.price {
+	position: absolute;
+	top: 600%;
+	right: 150px;
+	font-size: 35px;
+}
+
+</style>
+<div class="navBar">
+	<header class="title">CAPITA</header>
+	<h3 style="position: absolute; top: 15px; left: 40px">
+		<a class="link" href="../">
+			Home
+		</a>
+	</h3>
+	<h3 style="position: absolute; top: 15px; right: 40px">
+		<a class="link" href="cart/">
+			Your Cart
+		</a>
+	</h3>
+</div>
+<body class="body">
+	<div class="Img">
+		<img src="https://cdn.shopify.com/s/files/1/0129/8212/4602/products/G0651901_BTR_F_5_480x480.jpg?v=1539809827" style="position: absolute; top: 50px; left: 40px;">
+	</div>
+	<div class="info">
+		<h1 class="itemName">VOLCOM JACKET<h1>
+		<p class="price">$179.99</p>
+		<form>
+			<h3 class="qText">Quantity<h3>
+			<input type="text" name="quantity" class="qInput">
+		</form>
+		<div>
+			<button type="button" class="addToCartButton">Add To Cart</button>
+		</div>
+	</div>
+</body>
+</html>

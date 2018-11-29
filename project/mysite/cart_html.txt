@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
         <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
 </head>
@@ -28,7 +28,15 @@
 .link {
 	color:white;
 	text-decoration: none;
-	font-family: 'Rakkas', cursive;"
+	font-family: 'Rakkas', cursive;
+}
+
+.cartItem {
+	border-style: solid;
+	border-color: Black;
+	background-color: White;
+	width: 80%;
+	height: 40px;
 }
 </style>
 <div class="navBar">
@@ -40,11 +48,11 @@
 	</h3>
 </div>
 <body class="body">
-	<h1 style="padding: 10px; text-align: left; font-family: "Helvetica", sans-serif;">
+	<h1 style="padding: 10px; text-align: left; font-family: 'Rakkas', cursive; color: White;">
 		Your Cart
 	</h1>
-	<p style="padding: 10px; font-size: 30px">
-		Items
-	</p>
+	<div id="cart_">
+		<p></p>
+	</div>
 </body>
 </html>

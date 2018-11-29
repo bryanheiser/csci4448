@@ -21,5 +21,12 @@ urlpatterns = [
     	path('mywebsite/login/', include('mywebsite.urls')),
 	path('mywebsite/cart/', include('mywebsite.urls')),
 	path('mywebsite/signup/', include('mywebsite.urls')),
+	path('mywebsite/bat_board/', include('mywebsite.urls')),
+	path('mywebsite/vol_jacket/', include('mywebsite.urls')),
+	path('mywebsite/burt_mittens/', include('mywebsite.urls')),
+	path('mywebsite/line_skis/', include('mywebsite.urls')),
+	path('mywebsite/von_goggles/', include('mywebsite.urls')),
+	path('mywebsite/686_jacket/', include('mywebsite.urls')),
+	path('mywebsite/add_to_cart/', include('mywebsite.urls')),
 	path('admin/', admin.site.urls)
 ]

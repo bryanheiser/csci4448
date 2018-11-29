@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
 </head>	
@@ -35,7 +35,7 @@
 	text-align: center;
 	font-size: 40px;
 	color: white;
-	font-family: 'Rakkas', cursive;"
+	font-family: 'Rakkas', cursive;
 }
 
 .link {
@@ -43,6 +43,183 @@
 	text-decoration: none;
 	font-family: 'Rakkas', cursive;	
 }
+
+.items {
+	background-color: white;
+	width: 100%;
+	height: 900px;
+}
+
+.item1 {
+	background-color: #444444;
+	width: 15%;
+	padding: 10px;
+	height: 250px;
+	position: absolute;
+	left: 12%;
+	top: 44%;
+	border: 1px;
+	border-radius: 10px;
+}
+
+.item1Img {
+	width: 60%;
+	height: 200px;
+	position: absolute;
+	left: 20%;
+}
+
+.item1Title {
+	position: absolute;
+	left: 20%;
+	top: 80%;
+	text-decoration: none;
+	color: White;
+	font-family: 'Rakkas', cursive; 
+}
+
+.item2 {
+	background-color: #444444;
+	width: 15%;
+	padding: 10px;
+	height: 250px;
+	position: absolute;
+	left: 32%;
+	top: 44%;
+	border: 1px;
+	border-radius: 10px;
+}
+
+.item2Img {
+	width: 80%;
+	height: 200px;
+	position: absolute;
+	left: 10%;
+}
+
+.item2Title {
+	position: absolute;
+	left: 25%;
+	top: 80%;
+	text-decoration: none;
+	color: White;
+	font-family: 'Rakkas', cursive; 
+}
+
+.item3 {
+	background-color: #444444;
+	width: 15%;
+	padding: 10px;
+	height: 250px;
+	position: absolute;
+	left: 52%;
+	top: 44%;
+	border: 1px;
+	border-radius: 10px;
+}
+
+.item3Img {
+	width: 70%;
+	height: 200px;
+	position: absolute;
+	left: 15%;
+}
+
+.item3Title {
+	position: absolute;
+	left: 25%;
+	top: 80%;
+	text-decoration: none;
+	color: White;
+	font-family: 'Rakkas', cursive; 
+}
+
+.item4 {
+	background-color: #444444;
+	width: 15%;
+	padding: 10px;
+	height: 250px;
+	position: absolute;
+	left: 72%;
+	top: 44%;
+	border: 1px;
+	border-radius: 10px;
+}
+
+.item4Img {
+	width: 70%;
+	height: 200px;
+	position: absolute;
+	left: 15%;
+}
+
+.item4Title {
+	position: absolute;
+	left: 40%;
+	top: 80%;
+	text-decoration: none;
+	color: White;
+	font-family: 'Rakkas', cursive; 
+}
+
+.item5 {
+	background-color: #444444;
+	width: 15%;
+	padding: 10px;
+	height: 250px;
+	position: absolute;
+	left: 12%;
+	top: 84%;
+	border: 1px;
+	border-radius: 10px;
+}
+
+.item5Img {
+	width: 75%;
+	height: 160px;
+	position: absolute;
+	top: 15%;
+	left: 13%;
+}
+
+.item5Title {
+	position: absolute;
+	left: 20%;
+	top: 85%;
+	text-decoration: none;
+	color: White;
+	font-family: 'Rakkas', cursive; 
+}
+
+.item6 {
+	background-color: #444444;
+	width: 15%;
+	padding: 10px;
+	height: 250px;
+	position: absolute;
+	left: 32%;
+	top: 84%;
+	border: 1px;
+	border-radius: 10px;
+}
+
+.item6Img {
+	width: 60%;
+	height: 200px;
+	position: absolute;
+	top: 5%;
+	left: 20%;
+}
+
+.item6Title {
+	position: absolute;
+	left: 33%;
+	top: 85%;
+	text-decoration: none;
+	color: White;
+	font-family: 'Rakkas', cursive; 
+}
+
 </style>
 <div class="navBar">
 	<header class="title">CAPITA</header>
@@ -100,7 +277,39 @@
 	<h1 style="padding: 20px; text-align: center; font-family: 'Rakkas', cursive;">
 		Check Out Our Newest Winter Gear!
 	</h1>
-	<div>
+	<div class="items">
+		<div class="item1">	
+			<img class="item1Img" src="https://www.bataleon.com/1819bataleon/prod_images/med/1819-boss-929.png">
+			<a class="item1Title" href="bat_board/">Bataleon Snowboard</a>
+		</div>
+		<div class="item2">		
+			<img class="item2Img" src="https://cdn.shopify.com/s/files/1/0129/8212/4602/products/G0651901_BTR_F_5_480x480.jpg?v=1539809827">
+			<a class="item2Title" href="vol_jacket/">Volcom Jacket</a>
+		</div>
+		<div class="item3">	
+			<img class="item3Img" src="https://www.rei.com/media/124a5e0d-0907-4623-b7d9-b082c42f97e6?size=512x682">
+			<a class="item3Title" href="burt_mittens/">Burton Mittens</a>
+		</div>
+		<div class="item4">	
+			<img class="item4Img" src="https://www.sunshineandski.com/wp-content/uploads/2015/12/line-skis-sir-francis-bacon-shorty-skis-2012.jpg">
+			<a class="item4Title" href="line_skis/">Line Skis</a>
+		</div>
+		<div class="item5">
+			<img class="item5Img" src="https://eu.vonzipper.com/media/filter/m/img/gmsnlclx_bsw_2.jpg">
+			<a class="item5Title" href="von_goggles/">Vonzipper Goggles</a>
+		</div>
+		<div class="item6">
+			<img class="item6Img" src="https://www.tactics.com/a/9s3w/9/686-authentic-woodland-insulated-jacket-dark-denim-plaid.webp">
+			<a class="item6Title" href="686_jacket/">686 Jacket</a>
+		</div>
+		<div class="item7">
+			<img class="item7Img" src="">
+			<a class="item7Title" href=""></a>
+		</div>
+		<div class="item8">
+			<img class="item8Img" src="">
+			<a class="item8Title" href=""></a>
+		</div>
 	</div>
 </body>
 </html>
